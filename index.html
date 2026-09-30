@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valeria Coy Ibarra — Desarrolladora Full Stack</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Public+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/sections.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/experience.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="wrap navbar-inner">
+    <a href="#" class="nav-logo">VCI<span class="nav-logo-dot">.</span></a>
+    <div class="navbar-right">
+        <div class="nav-links">
+            <a href="#inicio" class="nav-link">Inicio</a>
+            <a href="#stack" class="nav-link">Perfil</a>
+            <a href="#proyectos" class="nav-link">Proyectos</a>
+            <a href="#experiencia" class="nav-link">Experiencia</a>
+            <a href="#contacto" class="nav-link">Contacto</a>
+        </div>
+        <div class="lang-switch" id="langToggle" role="button" aria-label="Cambiar idioma">
+            <span class="lang-option active" data-lang="es">ES</span>
+            <span class="lang-option" data-lang="en">EN</span>
+        </div>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ibarravaleria939@gmail.com" target="_blank" rel="noopener" class="nav-cta">Hablemos</a>
+    </div>
+       <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+    </button>
+        </div>
+    </nav>
+
+    <canvas id="bg-canvas"></canvas>
+</div>
+
+    <canvas id="bg-canvas"></canvas>
+
+    <section class="hero" id="inicio">
+        <div class="wrap hero-grid">
+            <div class="hero-text">
+                <div class="hero-eyebrow">ibarravaleria939@gmail.com</div>
+                <h1 class="hero-name" data-es="Valeria Coy Ibarra" data-en="Valeria Coy Ibarra">Valeria Coy Ibarra</h1>
+                <p class="hero-role" data-es="Desarrolladora Full Stack" data-en="Full Stack Developer">Desarrolladora Full Stack</p>
+                <p class="hero-bio"
+                   data-es="Empecé haciendo APIs en ASP.NET Core y terminé armando plataformas completas: bases de datos que aguantan presión SQL Server, MySQL, PostgreSQL, contenedores que escalan con Docker, pipelines que se despliegan solos. Trabajo con C#, PHP/Laravel, JavaScript y React, y disfruto sobre todo diseñar la arquitectura que sostiene todo eso: multi-tenant, Clean Architecture, autenticación real. En los últimos meses sumé algo que me tiene emocionada: integrar IA generativa en producción RAG, LLMs, clasificación automática."
+                   data-en="I started building APIs in ASP.NET Core and ended up architecting full platforms: databases that hold up under pressure SQL Server, MySQL, PostgreSQL, containers that scale with Docker, pipelines that deploy themselves. I work with C#, PHP/Laravel, JavaScript and React, and I especially enjoy designing the architecture that holds it all together: multi-tenant, Clean Architecture, real authentication. In the last few months I added something that has me excited: integrating generative AI in production RAG, LLMs, automatic classification.">
+                    Empecé haciendo APIs en ASP.NET Core y terminé armando plataformas completas: bases de datos
+                    que aguantan presión SQL Server, MySQL, PostgreSQL, contenedores que escalan con Docker,
+                    pipelines que se despliegan solos. Trabajo con C#, PHP/Laravel, JavaScript y React, y disfruto
+                    sobre todo diseñar la arquitectura que sostiene todo eso: multi-tenant, Clean Architecture,
+                    autenticación real. En los últimos meses sumé algo que me tiene emocionada: integrar IA
+                    generativa en producción RAG, LLMs, clasificación automática.
+                </p>
+                <div class="hero-links">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ibarravaleria939@gmail.com" target="_blank" rel="noopener" class="hero-link primary" data-es="Escríbeme" data-en="Email me">Escríbeme</a>
+                    <a href="https://github.com/valeria-ibarra-dev" class="hero-link">GitHub</a>
+                    <a href="https://www.linkedin.com/in/valeria-coy-ibarra" class="hero-link">LinkedIn</a>
+                </div>
+                <div class="hero-meta">
+                    <span><i class="dot"></i><span data-es="Medellín, Colombia" data-en="Medellín, Colombia">Medellín, Colombia</span></span>
+                    <span><i class="dot"></i><span data-es="Disponible para nuevos proyectos" data-en="Available for new projects">Disponible para nuevos proyectos</span></span>
+                </div>
+            </div>
+
+            <div class="hero-terminal">
+                <div class="terminal-header">
+                    <span class="t-dot red"></span>
+                    <span class="t-dot yellow"></span>
+                    <span class="t-dot green"></span>
+                    <span class="terminal-title">stack.sh</span>
+                </div>
+                <pre class="terminal-body"><code><span class="cmd">$</span> whoami
+valeria_coy_ibarra
+
+<span class="cmd">$</span> cat stack.json
+{
+  <span class="key">"backend"</span>: [<span class="str">"C#"</span>, <span class="str">"ASP.NET Core"</span>, <span class="str">"PHP/Laravel"</span>, <span class="str">"Python"</span>],
+  <span class="key">"frontend"</span>: [<span class="str">"React"</span>, <span class="str">"JavaScript"</span>, <span class="str">"HTML5"</span>, <span class="str">"CSS3"</span>],
+  <span class="key">"database"</span>: [<span class="str">"SQL Server"</span>, <span class="str">"MySQL"</span>, <span class="str">"PostgreSQL"</span>, <span class="str">"pgvector"</span>],
+  <span class="key">"devops"</span>: [<span class="str">"Docker"</span>, <span class="str">"Nginx"</span>, <span class="str">"CI/CD"</span>, <span class="str">"AWS EC2"</span>, <span class="str">"Git/GitHub"</span>],
+  <span class="key">"ai"</span>: [<span class="str">"RAG"</span>, <span class="str">"LLMs"</span>, <span class="str">"Prompt Engineering"</span>],
+  <span class="key">"metodologia"</span>: [<span class="str">"Scrum/Agile"</span>]
+}
+
+<span class="cmd">$</span> status --check
+<span class="comment">✓ available_for_hire</span></code></pre>
+            </div>
+        </div>
+        <a href="#stack" class="scroll-indicator" aria-label="Ir a la siguiente sección">
+            <svg class="arrow-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M10 3v13M4 10l6 6 6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+            <span class="scroll-hint" data-es="ver más" data-en="see more">ver más</span>
+        </a>
+    </section>
+
+    <section class="section" id="stack">
+        <div class="wrap">
+            <div class="section-label" data-es="01 — Perfil" data-en="01 — Profile">01 — Perfil</div>
+            <h2 class="section-title" data-es="Cómo trabajo" data-en="How I work">Cómo trabajo</h2>
+
+            <p class="section-text"
+               data-es="Si tengo que ser honesta, me cuesta quedarme en una sola cosa. Un día estoy resolviendo algo en el backend con C# y bases de datos, al siguiente ajustando la interfaz, y en otro aprendiendo a integrar un modelo de IA porque el proyecto lo necesitaba. Me gusta poder moverme por todo el stack del servidor al despliegue, de la base de datos al frontend y aprender lo que haga falta en el camino. Al final, entre más entiendo de cada parte, mejores decisiones tomo sobre cómo construir el resto."
+               data-en="Honestly, I have a hard time sticking to just one thing. One day I'm solving something in the backend with C# and databases, the next I'm tweaking the interface, and another I'm learning to integrate an AI model because the project needed it. I like being able to move across the whole stack from the server to deployment, from the database to the frontend and learn whatever is needed along the way. In the end, the more I understand each part, the better decisions I make about how to build the rest.">
+                Si tengo que ser honesta, me cuesta quedarme en una sola cosa. Un día estoy resolviendo algo en
+                el backend con C# y bases de datos, al siguiente ajustando la interfaz, y en otro
+                aprendiendo a integrar un modelo de IA porque el proyecto lo necesitaba. Me gusta poder moverme
+                por todo el stack del servidor al despliegue, de la base de datos al frontend y aprender lo
+                que haga falta en el camino. Al final, entre más entiendo de cada parte, mejores decisiones tomo
+                sobre cómo construir el resto.
+            </p>
+
+            <div class="stack-grid">
+                <div class="stack-group">
+                    <h3 class="stack-cat" data-es="Backend" data-en="Backend">Backend</h3>
+                    <div class="tags">
+                        <span class="tag">C#</span>
+                        <span class="tag">ASP.NET Core</span>
+                        <span class="tag">PHP</span>
+                        <span class="tag">Laravel</span>
+                        <span class="tag">Python</span>
+                    </div>
+                </div>
+
+                <div class="stack-group">
+                    <h3 class="stack-cat" data-es="Frontend" data-en="Frontend">Frontend</h3>
+                    <div class="tags">
+                        <span class="tag">React</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                    </div>
+                </div>
+
+                <div class="stack-group">
+                    <h3 class="stack-cat" data-es="Bases de datos" data-en="Databases">Bases de datos</h3>
+                    <div class="tags">
+                        <span class="tag">SQL Server</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">pgvector</span>
+                        <span class="tag">Entity Framework Core</span>
+                    </div>
+                </div>
+
+                <div class="stack-group">
+                    <h3 class="stack-cat" data-es="DevOps &amp; Cloud" data-en="DevOps &amp; Cloud">DevOps &amp; Cloud</h3>
+                    <div class="tags">
+                        <span class="tag">Docker</span>
+                        <span class="tag">Docker Compose</span>
+                        <span class="tag">Nginx</span>
+                        <span class="tag">CI/CD · GitHub Actions</span>
+                        <span class="tag">AWS EC2</span>
+                        <span class="tag">Git/GitHub</span>
+                    </div>
+                </div>
+
+                <div class="stack-group">
+                    <h3 class="stack-cat" data-es="IA &amp; Automatización" data-en="AI &amp; Automation">IA &amp; Automatización</h3>
+                    <div class="tags">
+                        <span class="tag">RAG</span>
+                        <span class="tag">LLMs · Groq / Ollama</span>
+                        <span class="tag">Embeddings vectoriales</span>
+                        <span class="tag">Prompt Engineering</span>
+                        <span class="tag">n8n</span>
+                    </div>
+                </div>
+
+                <div class="stack-group">
+                    <h3 class="stack-cat" data-es="Arquitectura &amp; Seguridad" data-en="Architecture &amp; Security">Arquitectura &amp; Seguridad</h3>
+                    <div class="tags">
+                        <span class="tag">Clean Architecture</span>
+                        <span class="tag">Multi-tenant</span>
+                        <span class="tag">JWT</span>
+                        <span class="tag">BCrypt</span>
+                        <span class="tag">SignalR</span>
+                    </div>
+                </div>
+
+                <div class="stack-group">
+                    <h3 class="stack-cat" data-es="Otros" data-en="Other">Otros</h3>
+                    <div class="tags">
+                        <span class="tag">Power BI</span>
+                        <span class="tag">Swagger / OpenAPI</span>
+                        <span class="tag">Scrum / Agile</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="proyectos">
+        <div class="wrap">
+            <div class="section-label" data-es="02 — Proyectos" data-en="02 — Projects">02 — Proyectos</div>
+            <h2 class="section-title" data-es="Lo que he construido" data-en="What I've built">Lo que he construido</h2>
+            <p class="section-text"
+               data-es="Cinco proyectos que muestran rangos distintos: desde IA generativa en producción hasta arquitecturas de datos que hacen el trabajo pesado antes de que llegue al backend."
+               data-en="Five projects showing different ranges: from generative AI in production to data architectures that do the heavy lifting before it ever reaches the backend.">
+                Cinco proyectos que muestran rangos distintos: desde IA generativa en producción hasta
+                arquitecturas de datos que hacen el trabajo pesado antes de que llegue al backend.
+            </p>
+
+            <div class="projects-list">
+
+                <!-- PROYECTO 1 -->
+                <div class="project-card">
+                    <div class="project-head">
+                        <span class="project-badge badge-ia" data-es="IA &amp; Arquitectura" data-en="AI &amp; Architecture">IA &amp; Arquitectura</span>
+                        <h3 class="project-title" data-es="Plataforma SaaS Multi-tenant con IA Generativa" data-en="Multi-tenant SaaS Platform with Generative AI">Plataforma SaaS Multi-tenant con IA Generativa</h3>
+                        <p class="project-summary"
+                           data-es="Plataforma de gestión de PQRS multi-tenant con Clean Architecture, integrando un módulo completo de IA: RAG con base de conocimiento propia, triaje automático de solicitudes y notificaciones en tiempo real."
+                           data-en="Multi-tenant complaint management platform built with Clean Architecture, integrating a full AI module: RAG with a custom knowledge base, automatic request triage, and real-time notifications.">
+                            Plataforma de gestión de PQRS multi-tenant con Clean Architecture, integrando un
+                            módulo completo de IA: RAG con base de conocimiento propia, triaje automático de
+                            solicitudes y notificaciones en tiempo real.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">ASP.NET Core</span>
+                            <span class="tag">PostgreSQL/pgvector</span>
+                            <span class="tag">Groq</span>
+                            <span class="tag">Ollama</span>
+                            <span class="tag">SignalR</span>
+                            <span class="tag">JWT</span>
+                            <span class="tag">AWS EC2</span>
+                            <span class="tag">Docker</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/valeria-ibarra-dev/pqrs-saas" target="_blank" rel="noopener" class="project-github">
+                                <svg width="15" height="15" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                                <span data-es="Ver código" data-en="View code">Ver código</span>
+                            </a>
+                            <button class="project-toggle" data-toggle>
+                                <span data-es="Ver detalles técnicos" data-en="View technical details">Ver detalles técnicos</span>
+                                <svg class="chevron" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                    <path d="M2.5 4.5L6 8l3.5-3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <div class="project-details-inner">
+                            <h4 data-es="Decisiones clave" data-en="Key decisions">Decisiones clave</h4>
+                            <ul>
+                                <li>RAG con PostgreSQL + pgvector: embeddings generados localmente vía Ollama, respuestas sintetizadas con Groq, búsqueda por similitud coseno con índices HNSW.</li>
+                                <li>Módulo de triaje automático que clasifica solicitudes en tiempo real (tipo, prioridad, sentimiento, resumen) con salida JSON estructurada.</li>
+                                <li>Aislamiento multi-tenant de doble mecanismo: API Key para integraciones públicas (widget embebible) y JWT con claims personalizados para usuarios autenticados.</li>
+                                <li>Notificaciones en tiempo real con SignalR, segmentadas por grupos de tenant.</li>
+                                <li>Despliegue completo en AWS EC2 desde cero: Security Groups, SSH, Docker Compose multi-servicio, Nginx, migraciones en producción.</li>
+                                <li>Widget embebible en JavaScript vanilla con Shadow DOM para aislamiento total de estilos.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROYECTO 2 -->
+                <div class="project-card">
+                    <div class="project-head">
+                        <span class="project-badge badge-db" data-es="Bases de Datos" data-en="Databases">Bases de Datos</span>
+                        <h3 class="project-title">DBHost — Hosting de Bases de Datos para Estudiantes</h3>
+                        <p class="project-summary"
+                           data-es="Plataforma con arquitectura 100% Database-Centric: toda la lógica de negocio vive en Stored Procedures, Functions y Views — el backend en .NET solo media, nunca decide."
+                           data-en="Platform with a 100% Database-Centric architecture: all business logic lives in Stored Procedures, Functions and Views — the .NET backend only mediates, it never decides.">
+                            Plataforma con arquitectura 100% Database-Centric: toda la lógica de negocio vive en
+                            Stored Procedures, Functions y Views — el backend en .NET solo media, nunca decide.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">SQL Server</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">.NET</span>
+                            <span class="tag">Repository Pattern</span>
+                            <span class="tag">Docker</span>
+                            <span class="tag">CI/CD</span>
+                            <span class="tag">Docusaurus</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/valeria-ibarra-dev" target="_blank" rel="noopener" class="project-github">
+                                <svg width="15" height="15" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                                <span data-es="Ver en GitHub" data-en="View on GitHub">Ver en GitHub</span>
+                            </a>
+                            <button class="project-toggle" data-toggle>
+                                <span data-es="Ver detalles técnicos" data-en="View technical details">Ver detalles técnicos</span>
+                                <svg class="chevron" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                    <path d="M2.5 4.5L6 8l3.5-3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <div class="project-details-inner">
+                            <h4 data-es="Decisiones clave" data-en="Key decisions">Decisiones clave</h4>
+                            <ul>
+                                <li>VPS hardenizado con HTTPS y CI/CD corriendo en 3 repositorios distintos.</li>
+                                <li>SQL Server para control del sistema + MySQL para las bases de datos de cada estudiante, con Repository Pattern y DIP para desacoplar el acceso a datos.</li>
+                                <li>Login con email, Google y GitHub, con aprovisionamiento automático de una base de datos nueva al momento del registro.</li>
+                                <li>Dashboard y landing page con métricas reales de uso.</li>
+                                <li>Documentación técnica completa construida en Docusaurus.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROYECTO 3 -->
+                <div class="project-card">
+                    <div class="project-head">
+                        <span class="project-badge badge-fullstack">Full Stack</span>
+                        <h3 class="project-title">RentApp — Plataforma de Rentas Cortas</h3>
+                        <p class="project-summary"
+                           data-es="Plataforma full-stack que conecta huéspedes y propietarios, con validación de identidad por IA, prevención de doble reserva a nivel de base de datos y notificaciones automáticas."
+                           data-en="Full-stack platform connecting guests and hosts, with AI-based identity verification, database-level double-booking prevention, and automatic notifications.">
+                            Plataforma full-stack que conecta huéspedes y propietarios, con validación de
+                            identidad por IA, prevención de doble reserva a nivel de base de datos y
+                            notificaciones automáticas.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Next.js 14</span>
+                            <span class="tag">.NET 10</span>
+                            <span class="tag">Clean Architecture</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">Redis</span>
+                            <span class="tag">Laravel</span>
+                            <span class="tag">Claude Vision API</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/valeria-ibarra-dev/RentApp-Prueba" target="_blank" rel="noopener" class="project-github">
+                                <svg width="15" height="15" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                                <span data-es="Ver código" data-en="View code">Ver código</span>
+                            </a>
+                            <button class="project-toggle" data-toggle>
+                                <span data-es="Ver detalles técnicos" data-en="View technical details">Ver detalles técnicos</span>
+                                <svg class="chevron" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                    <path d="M2.5 4.5L6 8l3.5-3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <div class="project-details-inner">
+                            <h4 data-es="Decisiones clave" data-en="Key decisions">Decisiones clave</h4>
+                            <ul>
+                                <li>Clean Architecture en 4 capas (Domain → Application → Infrastructure → API), con las dependencias apuntando siempre hacia adentro.</li>
+                                <li>Prevención de double-booking a nivel de base de datos con un EXCLUDE CONSTRAINT de PostgreSQL (extensión btree_gist), garantizando que dos reservas nunca se solapen aunque ocurran al mismo tiempo.</li>
+                                <li>Validación de identidad (KYC) con Claude Vision API: el documento se cifra con AES-256, se analiza, y se elimina inmediatamente después del veredicto.</li>
+                                <li>Autenticación diferida: el usuario explora y guarda favoritos sin registrarse; el login solo se pide al reservar.</li>
+                                <li>Favoritos anónimos con Zustand y sincronización automática al iniciar sesión.</li>
+                                <li>Microservicio de notificaciones en Laravel, desacoplado vía cola Redis, para no bloquear el flujo principal de la API.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROYECTO 4 -->
+                <div class="project-card">
+                    <div class="project-head">
+                        <span class="project-badge badge-backend">Backend</span>
+                        <h3 class="project-title">Tickets API — Sistema de Soporte Técnico</h3>
+                        <p class="project-summary"
+                           data-es="API REST en Laravel para gestión de tickets de soporte y asignación de dispositivos, con monitoreo de errores, notificaciones automáticas y dashboard de métricas."
+                           data-en="Laravel REST API for support ticket management and device assignment, with error monitoring, automatic notifications, and a metrics dashboard.">
+                            API REST en Laravel para gestión de tickets de soporte y asignación de dispositivos,
+                            con monitoreo de errores, notificaciones automáticas y dashboard de métricas.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Laravel 11</span>
+                            <span class="tag">PHP 8.4</span>
+                            <span class="tag">SQL Server</span>
+                            <span class="tag">Sanctum</span>
+                            <span class="tag">Docker</span>
+                            <span class="tag">Sentry</span>
+                            <span class="tag">Discord Webhooks</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/valeria-ibarra-dev/Ticket--Api" target="_blank" rel="noopener" class="project-github">
+                                <svg width="15" height="15" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                                <span data-es="Ver código" data-en="View code">Ver código</span>
+                            </a>
+                            <button class="project-toggle" data-toggle>
+                                <span data-es="Ver detalles técnicos" data-en="View technical details">Ver detalles técnicos</span>
+                                <svg class="chevron" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                    <path d="M2.5 4.5L6 8l3.5-3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <div class="project-details-inner">
+                            <h4 data-es="Decisiones clave" data-en="Key decisions">Decisiones clave</h4>
+                            <ul>
+                                <li>Autenticación con Laravel Sanctum vía tokens Bearer.</li>
+                                <li>Rate limiting de 10 requests por minuto por IP/usuario, con respuesta 429 controlada.</li>
+                                <li>Monitoreo de errores en producción con Sentry.</li>
+                                <li>Notificaciones automáticas a Discord ante errores 500 o límites excedidos, con detalles del endpoint, método e IP.</li>
+                                <li>Dashboard visual con métricas de tickets, dispositivos y actividad reciente.</li>
+                                <li>Logs personalizados por evento (creación, actualización y eliminación de tickets, asignación de dispositivos).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROYECTO 5 -->
+                <div class="project-card">
+                    <div class="project-head">
+                        <span class="project-badge badge-producto" data-es="Producto &amp; IA" data-en="Product &amp; AI">Producto &amp; IA</span>
+                        <h3 class="project-title">Wayze — Planificador Inteligente de Rutas</h3>
+                        <p class="project-summary"
+                           data-es="Aplicación de ciudad inteligente para Medellín que combina clima, seguridad ciudadana y agenda diaria con IA para sugerir la mejor ruta. Presentado en el RIWI Tech &amp; Business Showcase, Advanced Track."
+                           data-en="Smart-city application for Medellín that combines weather, public safety and a daily agenda with AI to suggest the best route. Presented at the RIWI Tech &amp; Business Showcase, Advanced Track.">
+                            Aplicación de ciudad inteligente para Medellín que combina clima, seguridad ciudadana
+                            y agenda diaria con IA para sugerir la mejor ruta. Presentado en el RIWI Tech &amp;
+                            Business Showcase, Advanced Track.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">React 18</span>
+                            <span class="tag">ASP.NET Core 8</span>
+                            <span class="tag">FastAPI</span>
+                            <span class="tag">OpenAI</span>
+                            <span class="tag">n8n</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">Google Maps API</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/valeria-ibarra-dev" target="_blank" rel="noopener" class="project-github">
+                                <svg width="15" height="15" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                                <span data-es="Ver en GitHub" data-en="View on GitHub">Ver en GitHub</span>
+                            </a>
+                            <button class="project-toggle" data-toggle>
+                                <span data-es="Ver detalles técnicos" data-en="View technical details">Ver detalles técnicos</span>
+                                <svg class="chevron" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                    <path d="M2.5 4.5L6 8l3.5-3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <div class="project-details-inner">
+                            <h4 data-es="Decisiones clave" data-en="Key decisions">Decisiones clave</h4>
+                            <ul>
+                                <li>Microservicio independiente en FastAPI (Python) para el pipeline de IA: parsea la agenda en lenguaje natural y calcula un puntaje de seguridad por ruta.</li>
+                                <li>Integra tres fuentes de datos externas en un solo flujo: Google Maps (rutas), OpenWeatherMap (clima por segmento) y datos.gov.co (seguridad ciudadana por zona).</li>
+                                <li>Automatización con n8n para recordatorios inteligentes vía WhatsApp y email.</li>
+                                <li>Arquitectura poliglota: React para el frontend, ASP.NET Core como API principal, FastAPI para IA — cada servicio en su propio repositorio.</li>
+                                <li>Documentación técnica completa con diagramas de arquitectura, ERD de base de datos y flujo de usuario.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="experiencia">
+        <div class="wrap">
+            <div class="section-label" data-es="03 — Experiencia" data-en="03 — Experience">03 — Experiencia</div>
+            <h2 class="section-title" data-es="Trayectoria" data-en="Journey">Trayectoria</h2>
+
+            <div class="timeline">
+
+                <div class="timeline-item current">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-period">Octubre 2025 — Actualidad</div>
+                    <h3 class="timeline-role" data-es="Desarrolladora Full Stack" data-en="Full Stack Developer">Desarrolladora Full Stack<span class="current-badge" data-es="Actual" data-en="Current">Actual</span></h3>
+                    <div class="timeline-company">Riwi · Medellín</div>
+                    <p class="timeline-text"
+                       data-es="Desarrollo proyectos backend con C# y ASP.NET Core, implementando APIs REST con autenticación y conexión a bases de datos relacionales (SQL Server, MySQL, PostgreSQL). Diseñé y desplegué una plataforma SaaS multi-tenant con un módulo completo de IA generativa: RAG con PostgreSQL y pgvector, LLMs (Groq, Ollama) para clasificación automática de solicitudes, y notificaciones en tiempo real con SignalR."
+                       data-en="I develop backend projects with C# and ASP.NET Core, implementing REST APIs with authentication and connections to relational databases (SQL Server, MySQL, PostgreSQL). I designed and deployed a multi-tenant SaaS platform with a full generative AI module: RAG with PostgreSQL and pgvector, LLMs (Groq, Ollama) for automatic request classification, and real-time notifications with SignalR.">
+                        Desarrollo proyectos backend con C# y ASP.NET Core, implementando APIs REST con autenticación y
+                        conexión a bases de datos relacionales (SQL Server, MySQL, PostgreSQL). Diseñé y desplegué una
+                        plataforma SaaS multi-tenant con un módulo completo de IA generativa: RAG con PostgreSQL y
+                        pgvector, LLMs (Groq, Ollama) para clasificación automática de solicitudes, y notificaciones en
+                        tiempo real con SignalR.
+                    </p>
+                    <p class="timeline-text"
+                       data-es="Containericé aplicaciones con Docker y Docker Compose, configurando Nginx como proxy inverso para simular entornos de producción reales, y desplegué soluciones completas en AWS EC2. Establecí pipelines CI/CD con GitHub Actions, automatizando build y despliegue en cada push a la rama principal."
+                       data-en="I containerized applications with Docker and Docker Compose, configuring Nginx as a reverse proxy to simulate real production environments, and deployed complete solutions on AWS EC2. I set up CI/CD pipelines with GitHub Actions, automating build and deployment on every push to the main branch.">
+                        Containericé aplicaciones con Docker y Docker Compose, configurando Nginx como proxy inverso para
+                        simular entornos de producción reales, y desplegué soluciones completas en AWS EC2. Establecí
+                        pipelines CI/CD con GitHub Actions, automatizando build y despliegue en cada push a la rama
+                        principal.
+                    </p>
+                    <p class="timeline-text"
+                       data-es="Trabajo con metodología Scrum en proyectos de equipo: planificación de sprints, dailys y retrospectivas. Construyo también interfaces funcionales con JavaScript, React, HTML y CSS, y exploro PHP con Laravel para desarrollo full-stack."
+                       data-en="I work with the Scrum methodology on team projects: sprint planning, dailies and retrospectives. I also build functional interfaces with JavaScript, React, HTML and CSS, and explore PHP with Laravel for full-stack development.">
+                        Trabajo con metodología Scrum en proyectos de equipo: planificación de sprints, dailys y
+                        retrospectivas. Construyo también interfaces funcionales con JavaScript, React, HTML y CSS, y
+                        exploro PHP con Laravel para desarrollo full-stack.
+                    </p>
+                    <div class="timeline-tags">
+                        <span class="tag">C#</span>
+                        <span class="tag">ASP.NET Core</span>
+                        <span class="tag">RAG</span>
+                        <span class="tag">LLMs</span>
+                        <span class="tag">SignalR</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">AWS EC2</span>
+                        <span class="tag">CI/CD</span>
+                        <span class="tag">Scrum</span>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-period">Noviembre 2024 — Marzo 2025</div>
+                    <h3 class="timeline-role" data-es="Servicio al Cliente" data-en="Customer Service">Servicio al Cliente</h3>
+                    <div class="timeline-company">Club Campestre del Rodeo · Medellín</div>
+                    <p class="timeline-text"
+                       data-es="Atendí socios y visitantes tomando pedidos y coordinando con cocina en entornos de alta demanda. Esta experiencia me exigió atención al detalle y comunicación clara bajo presión, dos habilidades que hoy aplico directamente al desarrollo de software: entender bien lo que el usuario necesita antes de escribir una sola línea de código, y mantener la calma cuando varias cosas urgentes pasan al mismo tiempo."
+                       data-en="I served members and visitors, taking orders and coordinating with the kitchen in high-demand environments. This experience demanded attention to detail and clear communication under pressure, two skills I now apply directly to software development: truly understanding what the user needs before writing a single line of code, and staying calm when several urgent things happen at once.">
+                        Atendí socios y visitantes tomando pedidos y coordinando con cocina en entornos de alta demanda.
+                        Esta experiencia me exigió atención al detalle y comunicación clara bajo presión, dos habilidades
+                        que hoy aplico directamente al desarrollo de software: entender bien lo que el usuario necesita
+                        antes de escribir una sola línea de código, y mantener la calma cuando varias cosas urgentes pasan
+                        al mismo tiempo.
+                    </p>
+                    <div class="timeline-tags">
+                        <span class="tag" data-es="Atención al detalle" data-en="Attention to detail">Atención al detalle</span>
+                        <span class="tag" data-es="Comunicación bajo presión" data-en="Communication under pressure">Comunicación bajo presión</span>
+                        <span class="tag" data-es="Trabajo en equipo" data-en="Teamwork">Trabajo en equipo</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="contacto">
+        <div class="wrap">
+
+            <div class="section-label" data-es="04 — Cierre" data-en="04 — Wrap-up">04 — Cierre</div>
+            <h2 class="section-title" data-es="Idiomas y habilidades" data-en="Languages and skills">Idiomas y habilidades</h2>
+
+            <div class="final-grid">
+
+                <div class="final-block">
+                    <h3 data-es="Idiomas" data-en="Languages">Idiomas</h3>
+                    <div class="lang-item">
+                        <span data-es="Español" data-en="Spanish">Español</span>
+                        <span class="lang-level" data-es="Nativo" data-en="Native">Nativo</span>
+                    </div>
+                    <div class="lang-item">
+                        <span data-es="Inglés" data-en="English">Inglés</span>
+                        <span class="lang-level">B1</span>
+                    </div>
+                </div>
+
+                <div class="final-block">
+                    <h3 data-es="Habilidades" data-en="Skills">Habilidades</h3>
+                    <div class="soft-tags">
+                        <span class="tag" data-es="Trabajo en equipo" data-en="Teamwork">Trabajo en equipo</span>
+                        <span class="tag" data-es="Comunicación asertiva" data-en="Assertive communication">Comunicación asertiva</span>
+                        <span class="tag" data-es="Aprendizaje rápido" data-en="Fast learner">Aprendizaje rápido</span>
+                        <span class="tag" data-es="Adaptabilidad" data-en="Adaptability">Adaptabilidad</span>
+                        <span class="tag" data-es="Resolución de problemas" data-en="Problem solving">Resolución de problemas</span>
+                        <span class="tag" data-es="Pensamiento crítico" data-en="Critical thinking">Pensamiento crítico</span>
+                        <span class="tag" data-es="Autonomía" data-en="Autonomy">Autonomía</span>
+                        <span class="tag" data-es="Proactividad" data-en="Proactivity">Proactividad</span>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="contact-title" data-es="¿Construimos algo juntos?" data-en="Let's build something together?">¿Construimos algo juntos?</h2>
+            <p class="contact-subtitle"
+               data-es="Si tienes un proyecto en mente, una oportunidad, o solo quieres charlar de desarrollo full stack, arquitectura de software o IA aplicada, escríbeme."
+               data-en="If you have a project in mind, an opportunity, or just want to talk about full stack development, software architecture, or applied AI, reach out.">
+                Si tienes un proyecto en mente, una oportunidad, o solo quieres charlar de desarrollo
+                full stack, arquitectura de software o IA aplicada, escríbeme.
+            </p>
+
+            <div class="contact-buttons">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ibarravaleria939@gmail.com" target="_blank" rel="noopener" class="contact-btn primary">
+                    ✉ ibarravaleria939@gmail.com
+                </a>
+                <a href="https://github.com/valeria-ibarra-dev" target="_blank" rel="noopener" class="contact-btn">
+                    GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/valeria-coy-ibarra" target="_blank" rel="noopener" class="contact-btn">
+                    LinkedIn
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <span data-es="Diseñado y construido por Valeria Coy Ibarra · 2026" data-en="Designed and built by Valeria Coy Ibarra · 2026">Diseñado y construido por Valeria Coy Ibarra · 2026</span>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
